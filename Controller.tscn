@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Controller.gd" type="Script" id=1]
+[ext_resource path="res://HSlider.gd" type="Script" id=2]
+
+[node name="time_sin" type="VBoxContainer"]
+margin_left = 189.0
+margin_top = 302.0
+margin_right = 916.0
+margin_bottom = 374.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_right = 727.0
+margin_bottom = 14.0
+text = "amplitude_y"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSlider" type="HSlider" parent="."]
+margin_top = 18.0
+margin_right = 727.0
+margin_bottom = 34.0
+max_value = 10.0
+step = 0.01
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
